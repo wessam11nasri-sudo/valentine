@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#ffe6e6, #ffcccc);
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #ff3366;
+            font-size: 40px;
+        }
+
+        button {
+            font-size: 22px;
+            padding: 12px 30px;
+            margin: 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: #ff4d88;
+            color: white;
+        }
+
+        .no {
+            background-color: #ccc;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<h1>💖 Camille will you be my Valentine ? 💖</h1>
+
+<button class="yes" onclick="yesClick()">Yes 💕</button>
+<button class="no" onmouseover="moveNo(this)">No 😢</button>
+
+<script>
+function moveNo(btn) {
+    btn.style.top = Math.random() * 80 + "vh";
+    btn.style.left = Math.random() * 80 + "vw";
+}
+
+function yesClick() {
+    alert("Je le savais ! (meilleur décision de ta vie )");
+}
+</script>
+
+</body>
+</html>
+
